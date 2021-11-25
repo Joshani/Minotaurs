@@ -15,7 +15,11 @@ public class jugador : MonoBehaviour
     public AudioClip sonidoGanar;
     public AudioClip sonidoPerder;
     AudioSource audioSource;
-    public float gunSpeed = 1;
+    public float gunSpeed = 1; bool chasingPlayer = false;
+    public Transform player;
+    public float vida = 5;
+    jugador playerScript;
+
 
     // Start is called before the first frame update
     void Start()

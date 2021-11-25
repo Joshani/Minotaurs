@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class NewBehaviourScript : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +17,24 @@ public class NewBehaviourScript : MonoBehaviour
     {
         
     }
+
+    public void VolverAJugar() {
+        SceneManager.LoadScene("Agua y Tierra");
+    }
+
+    public void EmpezarAJugar() {
+        SceneManager.LoadScene("Agua y Tierra");
+    }
+
+    public void SalirDelJuego() {
+        Application.Quit();
+    }
+
+    public void IrAlMenu() {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void Perder() {
+        SceneManager.LoadScene("Perder");
+}
 }
